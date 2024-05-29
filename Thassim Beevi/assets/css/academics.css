@@ -1,0 +1,379 @@
+/* ! HERO SECTION (DESKTOP) */
+.hero_container {
+  min-height: 500px;
+  background: black;
+}
+
+.hero_text {
+  font-size: 12px;
+}
+
+/* ! TAB FEATURE SECTION  */
+/* ? DROPDOWN PART */
+.dropdown_container {
+  width: 100%;
+}
+
+.dropdown_button {
+  background: #d9d9d966 !important;
+}
+
+.dropdown_button i {
+  padding: 8px 8px 6px 8px;
+  background-color: var(--color-blue);
+  color: white;
+  font-size: 12px;
+  transition: rotate 0.5s ease-in-out;
+}
+
+.dropdown_button i.active {
+  rotate: 180deg;
+}
+
+.dropdown_content {
+  max-height: 0px;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.dropdown_content button {
+  color: #4e3629;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition: background-color 250ms ease-in-out;
+}
+
+.dropdown_content button:hover {
+  background-color: #d9d9d966;
+}
+
+.dropdown_content .nav-item .nav-link.active {
+  background-color: #d9d9d966;
+}
+
+.dropdown_content.active {
+  /* height: 1; */
+  max-height: 340px;
+}
+
+/* ? STYLING FOR TAB PANELS */
+.academic_heading {
+  font-size: 24px;
+  font-family: var(--ff-inter);
+}
+
+.academic_heading.red {
+  color: var(--color-red);
+}
+.academic_text {
+  font-size: 14px;
+  font-family: var(--ff-inter);
+  line-height: 1.8;
+}
+
+.academic_big__number {
+  font-size: 24px;
+  font-family: var(--ff-inter);
+}
+
+.academic_small__text {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: var(--ff-inter);
+}
+
+/* ? STYLING FOR TAB PANELS --> ACADEMIC CARDS ONE */
+.academic_cardOne {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  margin-top: 3rem !important;
+}
+.academic_card__heading {
+  font-size: 16px;
+  font-family: var(--ff-inter);
+}
+
+.academic_card__text {
+  font-size: 12px;
+  font-family: var(--ff-inter);
+}
+
+.academic_achievements {
+  border-top: 3px solid #ffc72c;
+  border-bottom: 3px solid #ffc72c;
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+
+/* ? STYLING FOR TAB PANELS --> ACADEMIC CARDS TWO */
+.academic_cardTwo p {
+  font-size: 14px;
+  font-family: var(--ff-inter);
+}
+
+/* ? STYLING FOR TAB PANELS --> ACADEMICS RESEARCH IMAGE */
+.academic_researchImage img {
+  filter: brightness(50%);
+}
+.academic_researchImage__text {
+  bottom: 20px;
+  left: 20px;
+}
+
+.academic_researchImage__textHeading {
+  font-size: 15px;
+  color: white;
+  font-family: var(--ff-inter);
+}
+
+.academic_researchImage__text p {
+  font-size: 10px;
+  color: white;
+  font-family: var(--ff-inter);
+  padding-right: 20px;
+}
+
+.academic_researchImage__text a {
+  background-color: var(--color-yellow);
+  color: black;
+  font-size: 10px;
+  padding: 8px 14px;
+}
+
+/* ? STYLING FOR  ACADEMIC TAGS */
+.academic_tags {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.academic_tag {
+  font-size: 10px;
+  color: black;
+  padding: 18px 0px !important;
+  font-family: var(--ff-inter);
+  border-bottom: 1px solid #f7f7f7;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 95%, #f0f2f3 95%);
+}
+
+/* ? STYLING FOR ACADMIC CALENDER */
+.academic_calender__wrapper {
+  padding-top: 3rem;
+}
+
+.academic_calender {
+  background: #f8f7f5;
+  font-family: var(--ff-inter);
+}
+
+.academic_calender h4 {
+  font-size: 20px;
+}
+
+.academic_calender p {
+  font-size: 12px;
+}
+
+.academic_calender a {
+  font-size: 10px;
+  color: var(--color-red);
+  letter-spacing: 1.124px;
+}
+
+@media (min-width: 576px) {
+  /* ? STYLING FOR TAB PANELS --> ACADEMIC RESEARCH IMAGE  */
+  .academic_researchImage__textHeading {
+    font-size: 24px;
+  }
+
+  .academic_researchImage__text p {
+    font-size: 14px;
+    max-width: 400px;
+  }
+
+  .academic_researchImage__text a {
+    font-size: 14px;
+  }
+
+  /* ? STYLING FOR TAB PANLES --> ACADEMIC TAGS */
+  .academic_tags {
+    column-gap: 30px;
+  }
+
+  .academic_tag {
+    font-size: 14px;
+  }
+
+  /* ? STYLING FOR TAB PANELS --> ACADEMIC CALENERS */
+  .academic_calender h4 {
+    font-size: 24px;
+  }
+
+  .academic_calender p {
+    font-size: 14px;
+  }
+
+  .academic_calender a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* ! HERO SECTION */
+  .hero_container {
+    min-height: 600px;
+  }
+  .hero_pause__icon {
+    bottom: 5%;
+    right: 2%;
+    color: white;
+    padding: 10px 12px;
+    transition: 300ms ease-in-out;
+    border-radius: 50%;
+  }
+
+  .hero_pause__icon:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* ! TAB FEATURE SECTION */
+  .dropdown_content {
+    max-height: 390px;
+  }
+
+  .tab_feature__container {
+    padding: 4rem 0;
+  }
+
+  /* ? STYLING FOR TAB PANELS -->  */
+  .academic_top__header {
+    margin-bottom: 3rem;
+  }
+  .academic_top__header a {
+    color: black;
+    font-size: 10px;
+    font-family: var(--ff-inter);
+  }
+
+  .academic_top__header i {
+    font-size: 10px;
+  }
+  .academic_text {
+    padding: 0 10%;
+  }
+
+  .academic_heading.red {
+    padding: 0 10%;
+    font-size: 28px;
+    position: relative;
+  }
+
+  .academic_heading::before {
+    content: "";
+    top: calc(50% - 2px);
+    left: 0;
+    width: 45px;
+    height: 4px;
+    background-color: #f0f2f3;
+    position: absolute;
+  }
+
+  /* ? STYLING FOR TAB PANELS --> ACADEMIC ACHIEVEMENTS */
+  .academic_achievements {
+    padding: 2.5rem 0;
+    margin: 3rem 0 !important;
+  }
+
+  /* ? STYLING FOR TAB PANELS --> STYLING FOR ACADEMIC CARD ONE */
+  .academic_cardOne {
+    padding-bottom: 1.5rem;
+  }
+  .academic_card__heading {
+    font-size: 18px;
+  }
+
+  /* ? STYLING FOR TAB PANELS --> STYLING FOR CARD TWO */
+  .academic_cardTwo i {
+    color: #c00404;
+    border: 1px solid #c00404;
+    width: fit-content;
+    padding: 4px 4px 2px 4px;
+    margin-top: 1rem;
+  }
+
+  /* ? STYLING FOR TAB PANELS --> STYLING FOR RESEARCH */
+  .academic_researchImage__text {
+    bottom: 40px;
+    left: 40px;
+  }
+
+  /* ? STYLING FOR ACADEMIC TAGS */
+  .academic_tags {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10%;
+  }
+
+  .academic_tag {
+    font-size: 12px;
+  }
+
+  .academic_tag.all {
+    padding: 0 0 0 10% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ! HERO SECTION */
+  .hero_container {
+    min-height: 700px;
+  }
+
+  /* ! TAB SECTION */
+  .academic_heading {
+    font-size: 32px;
+  }
+  /* ? STYLING FOR TAB SECTION --> ACADEMIC TOP HEADER */
+  .academic_top__header {
+    margin-bottom: 64px !important;
+  }
+
+  .academic_achievements {
+    margin: 4rem 0 !important;
+  }
+  /* ? STYLING FOR TAB SECTION --> ACADEMIC CARD ONE */
+  .academic_cardOne_container {
+    margin: 80px 0 !important;
+  }
+
+  .academic_cardOne h4 {
+    font-size: 20px;
+  }
+
+  .academic_card__text {
+    font-size: 14px;
+  }
+
+  /* ? STYLING FOR TAB SECTION --> ACADEMICS RESEARCH IMAGE */
+  .academic_researchImage__text {
+    bottom: 60px;
+    left: 60px;
+  }
+
+  .academic_researchImage__text p {
+    max-width: 500px;
+  }
+
+  /* ? STYLING FOR ACADEMIC TAGS --> ACADEMICS TAGS */
+  .academic_tags {
+    column-gap: 50px;
+  }
+
+  /* ? STYLING FOR TAB SECTION --> ACADEMIC CALENDER */
+  .academic_calender__wrapper {
+    padding-top: 5.6rem;
+  }
+}

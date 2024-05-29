@@ -1,0 +1,19 @@
+:root {
+  /* FONTS */
+  --ff-marcellus: "Marcellus", serif;
+  --ff-lato: "Lato", sans-serif;
+  --ff-gothic-a1: "Gothic A1", sans-serif;
+  --ff-martel: "Martel", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  /* COLOUR */
+  --color-blue: #1414a0;
+  --color-red: #c00404;
+  --color-yellow: #ffc72c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
